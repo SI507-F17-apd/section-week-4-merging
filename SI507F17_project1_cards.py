@@ -21,7 +21,7 @@ class Card(object):
         self.rank_num = rank # To handle winning comparison
 
     def __str__(self):
-        return "{} of {}".format(self.rank,self.suit) 
+        return "{0} of {1}".format(self.rank,self.suit) 
 
 
 class Deck(object):
@@ -63,7 +63,7 @@ class Deck(object):
     def deal_hand(self, hand_size):
         hand_cards = []
         for i in range(hand_size):
-            hand_cards.append(self.pop_card()) 
+            hand_cards.append(self.pop_card())
         return hand_cards
 
 
